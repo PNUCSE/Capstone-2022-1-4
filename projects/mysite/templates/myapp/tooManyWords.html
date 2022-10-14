@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>한국어 의존 구문 분석기</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container my-3">
+        <h2>한국어 의존 구문 분석기</h2>
+        <form action="result/" method="post" class="my-3">
+        {% csrf_token %}
+            <div class="mb-3">
+                <label for="text" class="form-label">텍스트입력</label>
+                <textarea name="text" id="text" class="form-control" rows="10"></textarea>
+            </div>
+            <input type="submit" value="확인" class="btn btn-primary">
+        </form>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>분석 결과</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container my-3">
+        <h3 class="font-weight-bold mb-6">입력문장 : {{sentence}}</h3>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">인덱스</th>
+              <th scope="col">단어형식</th>
+              <th scope="col">지배소인덱스</th>
+              <th scope="col">의존관계레이블</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in table %}
+            <tr>
+              <th scope="row">{{r.0}}</th>
+              <td>{{r.1}}</td>
+              <td>{{r.2}}</td>
+              <td>{{r.3}}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <hr>
+        {% if words_limit_pass  == True %}
+            <img src="data:image/png;base64, {{graph|safe}}" alt="">
+        {% endif %}
+        <a href="/myapp/" class="btn btn-primary" role="button">다시 분석하기</a>
+    </div>
+
+</body>
+</html>

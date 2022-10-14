@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>한국어 의존 구문 분석기</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <script type="text/javascript" src ="{% static 'bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <div class="container my-3">
+        <h2>한국어 의존 구문 분석기</h2>
+        <form action="result/" method="post" class="my-3">
+        {% csrf_token %}
+            <div class="mb-3">
+                <label for="text" class="form-label">텍스트입력</label>
+                <textarea name="text" id="text" class="form-control" rows="10"></textarea>
+            </div>
+            <input type="submit" value="확인" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        </form>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="d-flex align-items-center">
+          <strong>분석중...</strong>
+          <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+</body>
+</html>
