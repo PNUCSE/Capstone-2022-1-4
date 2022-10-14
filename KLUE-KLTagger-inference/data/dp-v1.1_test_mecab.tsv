@@ -1,0 +1,7 @@
+## 칼럼명 : INDEX	WORD_FORM	LEMMA	POS	HEAD	DEPREL
+##sentence:	sentence:
+1	덕분에	덕분 에	NNG+JKB	5	AP_CNJ
+2	우리	우리	NP	3	AP_CNJ
+3	과학의	과학 의	NNG+JKG	4	AP_CNJ
+4	미래가	미래 가	NNG+JKS	5	AP_CNJ
+5	밝습니다.	밝 습니다 .	VA+EF+SF	0	VP
