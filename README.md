@@ -26,8 +26,8 @@
 
 ### 4. 소개 및 시연 영상
 
-[![부산대학교 정보컴퓨터공학부 소개](http://img.youtube.com/vi/zh_gQ_lmLqE/0.jpg)](https://youtu.be/zh_gQ_lmLqE)
-추가예정
+[![04조 세분화된 한국어 형태소에 기반한 사전 학습모델 및 의존구문분석 모델 개발](https://img.youtube.com/vi/DtlYtrth4LI/0.jpg)](https://www.youtube.com/watch?v=DtlYtrth4LI)
+
 ### 5. 설치 및 사용법  
 
 아래 주소에서 손쉽게 구문분석기를 사용할 수 있습니다.  
